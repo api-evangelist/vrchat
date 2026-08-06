@@ -1,0 +1,63 @@
+generated: '2026-08-05'
+method: searched
+source: https://creators.vrchat.com/worlds/clientsim/
+summary: 'VRChat has no test-vs-live API mode, no sandbox credentials, and no test
+  key prefixes — its web API has a single production environment and is undocumented.
+  The sandbox surface it does publish is for CREATORS: a first-party in-editor client
+  simulator, a local Build & Test loop that runs your world or avatar in the real
+  VRChat client without publishing it, and a staged public-release gate (Community
+  Labs) before a world reaches the main search.'
+api_sandbox:
+  available: false
+  test_mode: false
+  test_credentials: false
+  note: There is one live API host, api.vrchat.cloud. No sandbox host, no test account
+    provisioning, no magic test identifiers are published.
+environments:
+- name: ClientSim
+  kind: local simulator
+  description: First-party Unity editor play-mode simulator for VRChat worlds. Runs
+    Udon and UdonSharp behaviours, simulates player interaction, remote players and
+    world lifecycle events inside the editor without connecting to VRChat.
+  docs: https://creators.vrchat.com/worlds/clientsim/
+  source: https://github.com/vrchat-community/ClientSim
+  ships_with: com.vrchat.worlds
+  official: true
+- name: Build & Test
+  kind: local client build
+  description: Builds the current world or avatar and launches it in the local VRChat
+    client for a private test session, without uploading it or making it visible to
+    other users. The standard pre-publish loop for both worlds and avatars.
+  docs: https://creators.vrchat.com/sdk/
+  official: true
+- name: Community Labs
+  kind: staged public release
+  description: A gated public staging area new worlds pass through before entering
+    the main VRChat world search, letting creators collect real traffic and feedback
+    ahead of full release.
+  docs: https://docs.vrchat.com/docs/vrchat-community-labs
+  official: true
+- name: Open Beta
+  kind: pre-release client channel
+  description: A public beta branch of the VRChat client, released ahead of each Live
+    build, used to test upcoming platform changes against existing content.
+  docs: https://docs.vrchat.com/docs/recent-releases
+  official: true
+osc_testing:
+  description: OSC is tested locally against a running VRChat client — inbound UDP
+    9000, outbound UDP 9001 — with OSCQuery used to discover the live parameter tree.
+    VRChat publishes debugging guidance and recommends third-party OSC monitors.
+  docs: https://docs.vrchat.com/docs/osc-debugging
+test_values: []
+test_values_note: VRChat publishes no test cards, test accounts, magic identifiers,
+  fixtures, or time-simulation tooling. Nothing is invented here.
+x-evidence:
+- url: https://creators.vrchat.com/worlds/clientsim/
+  http_status: 200
+  fetched: '2026-08-05'
+- url: https://docs.vrchat.com/docs/vrchat-community-labs
+  http_status: 200
+  fetched: '2026-08-05'
+- url: https://docs.vrchat.com/docs/osc-debugging
+  http_status: 200
+  fetched: '2026-08-05'

@@ -1,0 +1,76 @@
+generated: '2026-08-05'
+method: searched
+source: https://hello.vrchat.com/creator-guidelines
+versioning:
+  web_api:
+    scheme: uri-path
+    current: '1'
+    base: https://api.vrchat.cloud/api/1
+    documented: false
+  client:
+    scheme: calendar
+    pattern: YYYY.<quarter>.<minor>[p<patch>]
+    current: 2026.2.3p3
+    current_build: '1867'
+    open_beta: 2026.3.1 (Build 1878)
+    docs: https://docs.vrchat.com/docs/recent-releases
+  sdk:
+    scheme: semver
+    current: 3.10.4
+    packages: [com.vrchat.base, com.vrchat.worlds, com.vrchat.avatars]
+    listing: https://packages.vrchat.com/official?download
+deprecation:
+  policy_url: null
+  policy_published: false
+  sunset_header: false
+  statement: 'VRChat does not document its API for public usage. Endpoints may be added
+    or removed, change format, or change locations with no warning or notification.'
+  statement_source: https://hello.vrchat.com/creator-guidelines
+  note: This is an explicit disclaimer of stability, not a deprecation policy. No RFC
+    8594 Sunset/Deprecation header support is documented or observed. No type Deprecation
+    pointer is wired in apis.yml because there is no policy to point at.
+sla:
+  url: null
+  uptime_target: null
+  published: false
+status_page:
+  url: https://status.vrchat.com
+  provider: Atlassian Statuspage
+  machine_readable:
+  - https://status.vrchat.com/api/v2/status.json
+  - https://status.vrchat.com/api/v2/summary.json
+  components:
+  - Authentication / Login
+  - Social / Friends List
+  - SDK Asset Uploads
+  - Realtime Player State Changes
+  - USA, West (San José)
+  - USA, East (Washington D.C.)
+  - Europe (Amsterdam)
+  - Japan (Tokyo)
+  x-evidence:
+    fetched: '2026-08-05'
+    url: https://status.vrchat.com/api/v2/summary.json
+    http_status: 200
+release_notes:
+  url: https://docs.vrchat.com/docs/recent-releases
+  index: https://docs.vrchat.com/llms.txt
+  cadence: rolling client releases with lettered patch builds; open beta channel ahead
+    of each live release
+feedback_and_roadmap:
+  feature_requests: https://feedback.vrchat.com/
+  public_roadmap_published: false
+  note: feedback.vrchat.com is a Canny board for feature requests and bug reports.
+    No dated public roadmap is published; https://roadmap.vrchat.com and
+    https://feedback.vrchat.com/roadmap do not resolve.
+deprecated_operations: []
+x-evidence:
+- url: https://hello.vrchat.com/creator-guidelines
+  http_status: 200
+  fetched: '2026-08-05'
+- url: https://status.vrchat.com/api/v2/summary.json
+  http_status: 200
+  fetched: '2026-08-05'
+- url: https://feedback.vrchat.com/roadmap
+  http_status: 404
+  fetched: '2026-08-05'

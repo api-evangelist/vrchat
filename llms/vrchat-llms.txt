@@ -1,0 +1,275 @@
+# VRChat Documentation
+
+> VRChat is a social platform where users can create content in industry-standard tools, share their creations with others, and play in the largest and most populous Virtual Reality universe. VR headset not required!
+
+## Guides
+- [Welcome to VRChat](https://docs.vrchat.com/docs/welcome-to-vrchat.md)
+- [Getting Started](https://docs.vrchat.com/docs/getting-started.md): This page will help you get started with VRChat. You'll be up and running in a jiffy!
+- [Frequently Asked Questions](https://docs.vrchat.com/docs/frequently-asked-questions.md)
+- [Controls](https://docs.vrchat.com/docs/controls.md)
+- [SteamVR Input 2.0](https://docs.vrchat.com/docs/steamvr-input-20.md)
+- [Input 2.0 FAQ](https://docs.vrchat.com/docs/input-20-faq.md)
+- [HTC Vive Wands](https://docs.vrchat.com/docs/vive.md)
+- [Oculus Touch](https://docs.vrchat.com/docs/touch.md)
+- [Valve Index Controllers](https://docs.vrchat.com/docs/valve-index.md)
+- [Keyboard and Mouse](https://docs.vrchat.com/docs/keyboard-and-mouse.md)
+- [Gamepad](https://docs.vrchat.com/docs/gamepad.md)
+- [Action Menu](https://docs.vrchat.com/docs/action-menu.md)
+- [Additional Options](https://docs.vrchat.com/docs/additional-options.md)
+- [Gesture Toggle](https://docs.vrchat.com/docs/gesture-toggle.md)
+- [Launch Options](https://docs.vrchat.com/docs/launch-options.md)
+- [Configuration File](https://docs.vrchat.com/docs/configuration-file.md)
+- [VRChat Performance Options](https://docs.vrchat.com/docs/vrchat-configuration-window.md)
+- [Local VRChat Storage](https://docs.vrchat.com/docs/local-vrchat-storage.md)
+- [Two-Factor Authentication](https://docs.vrchat.com/docs/setup-2fa.md)
+- [Suggesting Localization Changes](https://docs.vrchat.com/docs/suggesting-localization-changes.md)
+- [Adjusting Your Avatar's Height](https://docs.vrchat.com/docs/adjusting-your-avatars-height.md)
+- [Using VRChat in a Virtual Machine](https://docs.vrchat.com/docs/using-vrchat-in-a-virtual-machine.md)
+- [VRChat Community Labs](https://docs.vrchat.com/docs/vrchat-community-labs.md): Current Status: Stage 2
+- [VRChat Safety and Trust System](https://docs.vrchat.com/docs/vrchat-safety-and-trust-system.md)
+- [Avatar Dynamic Bone Limits](https://docs.vrchat.com/docs/avatar-dynamic-bone-limits.md)
+- [Avatar Interaction Permissions and Settings](https://docs.vrchat.com/docs/permissions-and-settings.md)
+- [Avatar Particle System Limits](https://docs.vrchat.com/docs/avatar-particle-system-limits.md): A description of the limits placed on particle systems on avatars
+- [Public Avatar Cloning](https://docs.vrchat.com/docs/public-avatar-cloning.md)
+- [Full-Body Tracking](https://docs.vrchat.com/docs/full-body-tracking.md)
+- [IK 2.0 Features and Options](https://docs.vrchat.com/docs/ik-20-features-and-options.md)
+- [Avatar Fallback System](https://docs.vrchat.com/docs/avatar-fallback-system.md)
+- [OSC Overview](https://docs.vrchat.com/docs/osc-overview.md)
+- [OSC Avatar Parameters](https://docs.vrchat.com/docs/osc-avatar-parameters.md)
+- [OSC Avatar Scaling](https://docs.vrchat.com/docs/osc-avatar-scaling.md)
+- [OSC Debugging](https://docs.vrchat.com/docs/osc-debugging.md)
+- [OSC DIY](https://docs.vrchat.com/docs/osc-diy.md)
+- [OSC as Input Controller](https://docs.vrchat.com/docs/osc-as-input-controller.md)
+- [OSC Trackers](https://docs.vrchat.com/docs/osc-trackers.md)
+- [OSC Eye Tracking](https://docs.vrchat.com/docs/osc-eye-tracking.md)
+- [OSC Resources](https://docs.vrchat.com/docs/osc-resources.md)
+- [OSCQuery](https://docs.vrchat.com/docs/oscquery.md)
+- [VRChat 2026.2.3](https://docs.vrchat.com/docs/vrchat-202623.md): June 22 - Build 1864 - Live
+- [VRChat 2026.2.3p1](https://docs.vrchat.com/docs/vrchat-202623p1.md): June 25 - Build 1865 - Live
+- [VRChat 2026.2.3p2](https://docs.vrchat.com/docs/vrchat-202623p2.md): July 8 - Build 1866 - Live
+- [VRChat 2026.2.3p3](https://docs.vrchat.com/docs/vrchat-202623p3.md): July 14 - Build 1867 - Live
+- [VRChat 2026.3.1 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202623-openbeta.md): July 22 - Build 1878 - Open Beta
+- [Recent Releases](https://docs.vrchat.com/docs/recent-releases.md)
+- [VRChat 2026.2.2](https://docs.vrchat.com/docs/vrchat-202622.md): May 28 - Build 1853 - Live
+- [VRChat 2026.2.2p1](https://docs.vrchat.com/docs/vrchat-202622p1.md): June 4 - Build 1854 - Live
+- [VRChat 2026.2.2p2](https://docs.vrchat.com/docs/vrchat-202622p2.md): June 5 - Build 1855 - Live
+- [VRChat 2026.2.3 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202623-open-beta.md): June 8 - Build 1860 - Open Beta
+- [VRChat 2026.2.2 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202622-open-beta.md): May 13 - Build 1849 - Open Beta
+- [VRChat 2026.2.1](https://docs.vrchat.com/docs/vrchat-202621.md): April 28 - Build 1835 - Live
+- [VRChat 2026.2.1p1](https://docs.vrchat.com/docs/vrchat-202621p1.md): April 30 - Build 1836 - Live
+- [VRChat 2026.2.1p2](https://docs.vrchat.com/docs/vrchat-202621p2.md): May 1 - Build 1837 - Live
+- [VRChat 2026.2.1p3](https://docs.vrchat.com/docs/vrchat-202621p3.md): May 11 - Build 1838 - Live
+- [VRChat 2026.2.1 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202621-open-beta.md): April 9 - Build 1930 - Open Beta
+- [VRChat 2026.1.3](https://docs.vrchat.com/docs/vrchat-202613.md): March 31 - Build 1818 - Live
+- [VRChat 2026.1.3p1](https://docs.vrchat.com/docs/vrchat-202613p1.md): April 8 - Build 1819 - Live
+- [VRChat 2026.1.3p2](https://docs.vrchat.com/docs/vrchat-202613p2.md): April 13 - Build 1820 - Live
+- [VRChat 2026.1.3 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202613-open-beta.md): March 17 - Build 1814 - Open Beta
+- [VRChat 2026.1.3p1 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202613p1-open-beta.md): April 8 - Build 1819 - Open Beta
+- [VRChat 2026.1.2](https://docs.vrchat.com/docs/vrchat-202612.md): February 24 - Build 1800 - Live
+- [VRChat 2026.1.2p1](https://docs.vrchat.com/docs/vrchat-202612p1.md): February 26 - Build 1801 - Live
+- [VRChat 2026.1.2p2](https://docs.vrchat.com/docs/vrchat-202612p1-1.md): March 9 - Build 1802 - Live
+- [VRChat 2026.1.2 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202612-open-beta.md): February 9, 2026 - Open Beta
+- [VRChat 2026.1.1](https://docs.vrchat.com/docs/vrchat-202611.md): January 27 - Build 1784 - Live
+- [VRChat 2026.1.1p1](https://docs.vrchat.com/docs/copy-of-vrchat-202611.md): February 2 - Build 1785 - Live
+- [VRChat 2026.1.1p2](https://docs.vrchat.com/docs/vrchat-202611p2.md): February 12 - Build 1786 - Live
+- [VRChat 2026.1.1 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202611-open-beta.md): January 12 - Build 1780 - Open Beta
+- [VRChat 2025.4.2](https://docs.vrchat.com/docs/vrchat-202542.md): December 3 - Build 1768 - Live
+- [VRChat 2025.4.2p1](https://docs.vrchat.com/docs/vrchat-202542p1.md): December 10 - Build 1769 - Live
+- [VRChat 2025.4.2p2 (Steam Only)](https://docs.vrchat.com/docs/vrchat-202542p2.md): December 16 - Build 1770 - Live
+- [VRChat 2025.4.1](https://docs.vrchat.com/docs/vrchat-202541.md): November 3 - Build 1749 - Live
+- [VRChat 2025.4.1p1](https://docs.vrchat.com/docs/vrchat-202541p1.md): November 19 - Build 1750 - Live
+- [VRChat 2025.4.2 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202542-openbeta.md): November 10 - Build 1761 - Open Beta
+- [VRChat 2025.3.4](https://docs.vrchat.com/docs/vrchat-202534.md): October 14 - Build 1726 - Live
+- [VRChat 2025.3.4p1](https://docs.vrchat.com/docs/vrchat-202534p1.md): October 22 - Build 1727 - Live
+- [VRChat 2025.4.1 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202541-openbeta.md): October 16 - Build 1744 - Open Beta
+- [VRChat 2025.3.4 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202534-openbeta.md): September 29 - Build 1722 - Open Beta
+- [VRChat 2025.3.3](https://docs.vrchat.com/docs/vrchat-202533.md): September 22 - Build 1711 - Live
+- [VRChat 2025.3.2](https://docs.vrchat.com/docs/vrchat-202532.md): August 27 - Build 1695 - Live
+- [VRChat 2025.3.2p1](https://docs.vrchat.com/docs/vrchat-202532p1.md): September 3 - Build 1696 - Live
+- [VRChat 2025.3.3 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202533-openbeta.md): September 4 - Build 1706 - Open Beta
+- [VRChat 2025.3.1](https://docs.vrchat.com/docs/vrchat-202531.md): August 7 - Build 1680 - Live
+- [VRChat 2025.3.1p1](https://docs.vrchat.com/docs/vrchat-202531p1.md): August 13 - Build 1681 - Live
+- [VRChat 2025.3.2 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202531-openbeta.md): August 14 - Build 1691 - Open Beta
+- [VRChat 2025.2.3](https://docs.vrchat.com/docs/vrchat-202523.md): June 24 - Build 1664 - Live
+- [VRChat 2025.3.1 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202531openbeta.md): July 21 - Build 1674 - Open Beta
+- [VRChat 2025.2.3 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202523-openbeta.md): June 11 - Build 1660 - Open Beta
+- [VRChat 2025.2.2](https://docs.vrchat.com/docs/vrchat-202522.md): June 2 - Build 1648 - Live
+- [VRChat 2025.2.2p1](https://docs.vrchat.com/docs/vrchat-202522p1.md): June 4 - Build 1649 - Live
+- [VRChat 2025.2.2p2](https://docs.vrchat.com/docs/vrchat-202522p2.md): June 6 - Build 1650 - Live
+- [VRChat 2025.2.1](https://docs.vrchat.com/docs/vrchat-202521.md): April 30 - Build 1626 - Live
+- [VRChat 2025.2.1p1](https://docs.vrchat.com/docs/vrchat-202521p1.md): May 1, 2025 - Build 1627 - Live
+- [VRChat 2025.2.1p2](https://docs.vrchat.com/docs/vrchat-202521p2.md): May 8, 2025 - Build 1628 - Live
+- [VRChat 2025.2.1p3](https://docs.vrchat.com/docs/vrchat-202521p3.md): May 16, 2025 - Build 1629 - Live
+- [VRChat 2025.2.2 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202522-openbeta.md): May 21 - Build 1642 - Open Beta
+- [VRChat 2025.2.1 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202521-openbeta.md): April 15 - Build 1621 - Open Beta
+- [VRChat 2025.1.3](https://docs.vrchat.com/docs/vrchat-202513.md): March 26 - Build 1606 - Release
+- [VRChat 2025.1.3p4](https://docs.vrchat.com/docs/vrchat-202513p4.md): April 10 - Build 1610 - Release
+- [VRChat 2025.1.3p3](https://docs.vrchat.com/docs/vrchat-202513p3.md): April 3 - Build 1609 - Release
+- [VRChat 2025.1.3p2](https://docs.vrchat.com/docs/vrchat-202513p2.md): April 1 - Build 1608 - Release
+- [VRChat 2025.1.3p1](https://docs.vrchat.com/docs/vrchat-202513p1.md): March 27 - Build 1607 - Release
+- [VRChat 2025.1.3 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202513-openbeta.md): March 12 - Build 1601 - Open Beta
+- [VRChat 2025.1.2](https://docs.vrchat.com/docs/vrchat-202512.md): February 20 - Build 1585 - Live
+- [VRChat 2025.1.2 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202512-openbeta.md): February 11 - Build 1582 - Open Beta
+- [VRChat 2025.1.1](https://docs.vrchat.com/docs/vrchat-202511.md): January 29 - Build 1567 - Live
+- [VRChat 2025.1.1p1](https://docs.vrchat.com/docs/vrchat-202511p1.md): February 4 - Build 1568 - Live
+- [VRChat 2024.4.2](https://docs.vrchat.com/docs/vrchat-202442.md): December 5, 2024 - Build 1552
+- [VRChat 2024.4.2p1](https://docs.vrchat.com/docs/vrchat-202442p1.md): December 6, 2024 - Build 1553
+- [VRChat 2024.4.2p2](https://docs.vrchat.com/docs/vrchat-202442p2.md): December 12, 2024 - Build 1554
+- [VRChat 2024.4.2p3](https://docs.vrchat.com/docs/vrchat-202442p3.md): January 23 - Build 1555
+- [VRChat 2025.1.1 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202511-openbeta.md): January 16 - Build 1564 - Open Beta
+- [VRChat 2024.4.1](https://docs.vrchat.com/docs/vrchat-202441.md): October 30, 2024 - Build 1533
+- [VRChat 2024.4.1p1](https://docs.vrchat.com/docs/vrchat-202441p1.md): November 6, 2024 - Build 1534
+- [VRChat 2024.4.1p2](https://docs.vrchat.com/docs/vrchat-202441p2.md): November 13, 2024 - Build 1535
+- [VRChat 2024.4.1p3](https://docs.vrchat.com/docs/vrchat-202441p3.md): November 21, 2024 - Build 1537
+- [VRChat 2024.4.1p4](https://docs.vrchat.com/docs/vrchat-202441p4.md): November 22, 2024 - Build 1538
+- [VRChat 2024.4.1p5](https://docs.vrchat.com/docs/vrchat-202441p5.md): November 27, 2024 - Build 1539
+- [VRChat 2024.4.2 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202442-open-beta.md): November 11, 2024 - Build 1546
+- [VRChat 2024.3.3](https://docs.vrchat.com/docs/vrchat-202433.md): Live - October 9 - Build 1518
+- [VRChat 2024.3.3p1](https://docs.vrchat.com/docs/vrchat-202433p1.md): Live - October 16 - Build 1519
+- [VRChat 2024.4.1 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202441openbeta.md): October 23, 2024 - Build 1530
+- [VRChat 2024.3.2](https://docs.vrchat.com/docs/vrchat-202432.md): Live - September 11 - Build 1504
+- [VRChat 2024.3.2p2](https://docs.vrchat.com/docs/vrchat-202432p2.md): Live - September 25 - Build 1506
+- [VRChat 2024.3.2p1](https://docs.vrchat.com/docs/vrchat-202432p1.md): Live - September 16 - Build 1505
+- [VRChat 2024.3.3 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202433-openbeta.md): Open Beta - September 17 - Build 1511
+- [VRChat 2024.3.1](https://docs.vrchat.com/docs/vrchat-202431.md): Live - 14 August 2024 - Build 1490
+- [VRChat 2024.3.1p5](https://docs.vrchat.com/docs/vrchat-202431p5.md): Live - 28 August 2024 - Build 1495
+- [VRChat 2024.3.1p4](https://docs.vrchat.com/docs/vrchat-202431p4.md): Live - 26 August 2024 - Build 1494
+- [VRChat 2024.3.1p3](https://docs.vrchat.com/docs/vrchat-202431p3.md): Live - 21 August 2024 - Build 1493
+- [VRChat 2024.3.1p2](https://docs.vrchat.com/docs/vrchat-202431p2.md): Live - 16 August 2024 - Build 1492
+- [VRChat 2024.3.1p1](https://docs.vrchat.com/docs/vrchat-202431p1.md): Live - 15 August 2024 - Build 1491
+- [VRChat 2024.3.2 (OPEN BETA)](https://docs.vrchat.com/docs/vrchat-202432-openbeta.md): Open Beta - 29 August 2024 - Build 1501
+- [VRChat 2024.2.3p2](https://docs.vrchat.com/docs/vrchat-202423p2.md): Live - 17 July 2024 - Build 1472
+- [VRChat 2024.3.1 (BETA)](https://docs.vrchat.com/docs/vrchat-202431beta.md): Open Beta - 24 July 2024 - Build 1480
+- [VRChat 2024.2.3](https://docs.vrchat.com/docs/vrchat-202423.md): Live - 20 June 2024 - Build 1470
+- [VRChat 2024.2.3p1](https://docs.vrchat.com/docs/vrchat-202423p1.md): Live - 9 July 2024 - Build 1471
+- [VRChat 2024.2.2p1](https://docs.vrchat.com/docs/vrchat-202422p1.md): Live - 22 May 2024 - Build 1458
+- [VRChat 2024.2.1p3](https://docs.vrchat.com/docs/vrchat-202421p3.md): Live - 8 May 2024 - Build 1449
+- [VRChat 2024.2.2](https://docs.vrchat.com/docs/202422.md): Live - 22 May 2024 - Build 1456
+- [VRChat 2024.2.1p2](https://docs.vrchat.com/docs/vrchat-202421p2.md): Live - 3 May 2024 - Build 1448
+- [VRChat 2024.2.1p1](https://docs.vrchat.com/docs/vrchat-202421p1.md): Live - 1 May 2024 - Build 1447
+- [VRChat 2024.2.1](https://docs.vrchat.com/docs/202421.md): Live - 24 April 2024 - Build 1446
+- [VRChat 2024.1.2](https://docs.vrchat.com/docs/vrchat-202412-live.md): Live - 27 March 2024 - Build 1435
+- [VRChat 2024.1.2p1](https://docs.vrchat.com/docs/vrchat-202412p1.md): Live - 3 April 2024 - Build 1436
+- [VRChat 2024.1.1p2](https://docs.vrchat.com/docs/vrchat-2024111p2.md): Live - 14 March 2024 - Build 1407
+- [VRChat 2024.1.1](https://docs.vrchat.com/docs/vrchat-202411.md): Live - 14 February 2024 - Build 1403
+- [VRChat 2024.1.1p1](https://docs.vrchat.com/docs/vrchat-2024111.md): Live - 15 February 2024 - Build 1405
+- [VRChat 2023.4.2p5](https://docs.vrchat.com/docs/vrchat-202342p5.md): Live - 29 January 2024 - Build 1393
+- [VRChat 2023.4.2p4](https://docs.vrchat.com/docs/vrchat-202342p4.md): Live - 11 January 2024 - Build 1392
+- [VRChat 2023.4.2p3](https://docs.vrchat.com/docs/vrchat-202342p3.md): Live - 10 January 2024 - Build 1391
+- [VRChat 2023.4.2p2](https://docs.vrchat.com/docs/vrchat-202342p2.md): Live - 6 December 2023 - Build 1390
+- [VRChat 2023.4.2p1](https://docs.vrchat.com/docs/vrchat-202342p1.md): Live - 1 December 2023 - Build 1389
+- [VRChat 2023.4.2p2m](https://docs.vrchat.com/docs/vrchat-202342p2m.md): Android - 8 December 2023
+- [VRChat 2023.4.2](https://docs.vrchat.com/docs/vrchat-202342.md): Live - 30 November 2023 - Build 1388
+- [VRChat 2023.4.1p4](https://docs.vrchat.com/docs/vrchat-202341p4.md): Release - 22 November 2023 - Build 1377
+- [VRChat 2023.4.1p3](https://docs.vrchat.com/docs/vrchat-202341p3.md): Release - 17 November 2023 - Build 1376
+- [VRChat 2023.4.1p2](https://docs.vrchat.com/docs/vrchat-202341p2.md): Release - 9 November 2023 - Build 1375
+- [VRChat 2023.4.1p1](https://docs.vrchat.com/docs/vrchat-202341p1.md): Release - 1 November 2023 - Build 1374
+- [VRChat 2023.4.1](https://docs.vrchat.com/docs/vrchat-202341.md): Open Beta - 18 October 2023 - Build 1373
+- [VRChat 2023.3.3p3](https://docs.vrchat.com/docs/vrchat-202333p3.md): Release - 24 October 2023 - Build 1360
+- [VRChat 2023.3.3p2m](https://docs.vrchat.com/docs/vrchat-202333p2m.md): Mobile Alpha - October 20, 2023
+- [VRChat 2023.3.3p2](https://docs.vrchat.com/docs/vrchat-202333p2.md): Release - 20 October 2023 - Build 1359
+- [VRChat 2023.3.3p1](https://docs.vrchat.com/docs/vrchat-202333p1.md): Release - 16 October 2023 - Build 1358
+- [VRChat 2023.3.3](https://docs.vrchat.com/docs/vrchat-202333.md): Release - 4 October 2023 - Build 1353
+- [VRChat 2023.3.2p1m](https://docs.vrchat.com/docs/vrchat-202332p1m.md): Mobile Alpha - September 13  2023
+- [VRChat 2023.3.2](https://docs.vrchat.com/docs/vrchat-202332.md): Release - 31 August 2023 - Build 1344
+- [VRChat 2023.3.2m](https://docs.vrchat.com/docs/vrchat-202332m.md): Mobile Alpha- 1 September 2023
+- [VRChat 2023.3.2p1](https://docs.vrchat.com/docs/vrchat-202332p1.md): Release - 7 September 2023 - Build 1345
+- [VRChat 2023.3.1m](https://docs.vrchat.com/docs/vrchat-202331m.md): Mobile Alpha - August 17
+- [VRChat 2023.3.1p2](https://docs.vrchat.com/docs/vrchat-202331p2.md)
+- [VRChat 2023.3.1p1](https://docs.vrchat.com/docs/vrchat-202331p1.md): Release - 11 August 2023 - Build 1333
+- [VRChat 2023.3.1](https://docs.vrchat.com/docs/vrchat-202331.md): Release - 9 August 2023 - Build 1332
+- [VRChat 2023.2.4](https://docs.vrchat.com/docs/vrchat-202324.md): Release - 31 July 2023 - Build 1319
+- [VRChat 2023.2.3](https://docs.vrchat.com/docs/vrchat-202323.md): Live - 12 June 2023 - Build 1308
+- [VRChat 2023.2.2p1](https://docs.vrchat.com/docs/vrchat-202322p1.md): Release - 24 May 2023 - Build 1305
+- [VRChat 2023.2.2](https://docs.vrchat.com/docs/vrchat-202322.md): Release - 3 May 2023 - Build 1304
+- [VRChat 2023.2.1p2](https://docs.vrchat.com/docs/vrchat-202321p2.md): Release - 19 April 2023 - Build 1299
+- [VRChat 2023.2.1p1](https://docs.vrchat.com/docs/vrchat-202321p1.md): Release - 14 April 2023 - Build 1296
+- [VRChat 2023.2.1](https://docs.vrchat.com/docs/vrchat-202321.md): Release - 13 April 2023 - Build 1295
+- [VRChat 2023.1.2p4](https://docs.vrchat.com/docs/vrchat-202312p4.md): Release - 22 March 2023 - Build 1290
+- [VRChat 2023.1.2p3](https://docs.vrchat.com/docs/vrchat-202312p3.md): Release - 16 March 2023 - Build 1289
+- [VRChat 2023.1.2p2](https://docs.vrchat.com/docs/vrchat-202312p2.md): Release - 15 March 2023 - Build 1288
+- [VRChat 2023.1.2p1](https://docs.vrchat.com/docs/vrchat-202312p1.md): Release - 10 March 2023 - Build 1287
+- [VRChat 2023.1.2](https://docs.vrchat.com/docs/vrchat-202312.md): Release - 9 March 2023 - Build 1286
+- [VRChat 2023.1.1p2](https://docs.vrchat.com/docs/vrchat-202311p2.md): Release - 9 February 2023 - Build 1281
+- [VRChat 2023.1.1p1](https://docs.vrchat.com/docs/vrchat-202311p1.md): Release - 7 February 2023 - Build 1279
+- [VRChat 2023.1.1](https://docs.vrchat.com/docs/vrchat-202311.md): Release - 2 February 2023 - Build 1277
+- [VRChat 2022.4.2p1](https://docs.vrchat.com/docs/vrchat-202242p1.md): Release - 9 December 2022 - Build 1275
+- [VRChat 2022.4.2](https://docs.vrchat.com/docs/vrchat-202242.md): Release - 7 December 2022 - Build 1274
+- [VRChat 2022.4.1p3](https://docs.vrchat.com/docs/vrchat-202241p3.md): Release - 2 December 2022 - Build 1263
+- [VRChat 2022.4.1p2](https://docs.vrchat.com/docs/vrchat-202241p2.md): Release - 10 November 2022 - Build 1260
+- [VRChat 2022.4.1p1](https://docs.vrchat.com/docs/vrchat-202241p1.md): Release - 4 November 2022 - Build 1259
+- [VRChat 2022.4.1](https://docs.vrchat.com/docs/vrchat-202241.md): Release - 3 November 2022 - Build 1258
+- [VRChat 2022.3.1p2](https://docs.vrchat.com/docs/vrchat-202231p2.md): Live - 18 October 2022 - Build 1249
+- [VRChat 2022.3.1p1](https://docs.vrchat.com/docs/vrchat-202231p1.md): Live - 13 October 2022 - Build 1248
+- [VRChat 2022.3.1](https://docs.vrchat.com/docs/vrchat-202231.md): Live - 12 October 2022 - Build 1247
+- [VRChat 2022.2.2p5](https://docs.vrchat.com/docs/vrchat-202222p5.md): Release - 6 September 2022 - Build 1231
+- [VRChat 2022.2.2p4](https://docs.vrchat.com/docs/vrchat-202222p4.md): Release - 31 August 2022 - Build 1230
+- [VRChat 2022.2.2p3](https://docs.vrchat.com/docs/vrchat-202222p3.md): Release - 30 August 2022 - Build 1229
+- [VRChat 2022.2.2p2c](https://docs.vrchat.com/docs/vrchat-202222p2c.md): Release - 12 August 2022 - Build 1221
+- [VRChat 2022.2.2p2b](https://docs.vrchat.com/docs/vrchat-202222p2b.md): Release - 8 August 2022 - Build 1219
+- [VRChat 2022.2.2p2](https://docs.vrchat.com/docs/vrchat-202222p2.md): Release - 5 August 2022 - Build 1218
+- [VRChat 2022.2.2p1b](https://docs.vrchat.com/docs/vrchat-202222p1b.md): Release - 29 July 2022 - Build 1215
+- [VRChat 2022.2.2p1](https://docs.vrchat.com/docs/vrchat-202222p1.md): Release - 27 July 2022 - Build 1214
+- [VRChat 2022.2.2](https://docs.vrchat.com/docs/vrchat-202222.md): Release - 26 July 2022 - Build 1213
+- [VRChat 2022.2.1p6](https://docs.vrchat.com/docs/vrchat-202221p6.md): Release - 24 Jun 2022 - Build 1207
+- [VRChat 2022.2.1p5](https://docs.vrchat.com/docs/vrchat-202221p5.md): Release - 23 Jun 2022 - Build 1206
+- [VRChat 2022.2.1p4](https://docs.vrchat.com/docs/vrchat-202221p4.md): Release - 2 Jun 2022 - Build 1205
+- [VRChat 2022.2.1p3](https://docs.vrchat.com/docs/vrchat-202221p3.md): Release - 31 May 2022 - Build 1204
+- [VRChat 2022.2.1p2](https://docs.vrchat.com/docs/vrchat-202221p2.md): Release - 26 May 2022 - Build 1203
+- [VRChat 2022.2.1p1](https://docs.vrchat.com/docs/vrchat-202221p1.md): Release - 25 May 2022 - Build 1202
+- [VRChat 2022.2.1](https://docs.vrchat.com/docs/vrchat-202221.md): Release - 25 May 2022 - Build 1201
+- [Archived](https://docs.vrchat.com/docs/archived.md)
+- [VRChat 2022.1.2p4](https://docs.vrchat.com/docs/vrchat-202212p4.md): Release - 4 May 2022 - Build 1194
+- [VRChat 2022.1.2p3](https://docs.vrchat.com/docs/vrchat-202212p3.md): Release - 26 April 2022 - Build 1192
+- [VRChat 2022.1.2p2](https://docs.vrchat.com/docs/vrchat-202212p2.md): Release - 25 April 2022 - Build 1191
+- [VRChat 2022.1.2p1](https://docs.vrchat.com/docs/vrchat-202212p1.md): Release - 21 April 2022 - Build 1190
+- [VRChat 2022.1.2](https://docs.vrchat.com/docs/vrchat-202212.md): Release - 21 April 2022 - Build 1189
+- [VRChat 2022.1.1p5](https://docs.vrchat.com/docs/vrchat-202211p5.md): Release - 12 April 2022 - Build 1174
+- [VRChat 2022.1.1p4](https://docs.vrchat.com/docs/vrchat-202211p4.md): Release - 29 March 2022 - Build 1173
+- [VRChat 2022.1.1p3](https://docs.vrchat.com/docs/vrchat-202211p3.md): Release - 21 March 2022 - Build 1172
+- [VRChat 2022.1.1p2](https://docs.vrchat.com/docs/vrchat-202211p2.md): Release - 4 March 2022 - Build 1171
+- [VRChat 2022.1.1p1](https://docs.vrchat.com/docs/vrchat-202211p1.md): Release - 28 February 2022 - Build 1170
+- [VRChat 2022.1.1](https://docs.vrchat.com/docs/vrchat-202211.md): Release - 24 February 2022 - Build 1169
+- [VRChat 2021.4.2p4](https://docs.vrchat.com/docs/vrchat-202142p4.md): Release - 10 February 2022 - Build 1163
+- [VRChat 2021.4.2p3](https://docs.vrchat.com/docs/vrchat-202142p3.md): Release - 16 December 2021 - Build 1162
+- [VRChat 2021.4.2p2](https://docs.vrchat.com/docs/vrchat-202142p2.md): Release - 10 December 2021 - Build 1160
+- [VRChat 2021.4.2p1](https://docs.vrchat.com/docs/vrchat-202142p1.md): Release - 7 December 2021 - Build 1159
+- [VRChat 2021.4.2](https://docs.vrchat.com/docs/vrchat-202142.md): Release - 1 December 2021 - Build 1156
+- [VRChat 2021.4.1p1](https://docs.vrchat.com/docs/vrchat-202141p1.md): Release - 18 November 2021 - Build 1151
+- [VRChat 2021.4.1](https://docs.vrchat.com/docs/vrchat-202141.md): Release - 8 November 2021 - Build 1149
+- [VRChat 2021.3.4p3](https://docs.vrchat.com/docs/vrchat-202134p3.md): Release - 5 November 2021 - Build 1135
+- [VRChat 2021.3.4p2](https://docs.vrchat.com/docs/vrchat-202134p2.md): Release - 30 September 2021 - Build 1134
+- [VRChat 2021.3.4p1](https://docs.vrchat.com/docs/vrchat-202134p1.md): Release - 21 September 2021 - Build 1133
+- [VRChat 2021.3.4](https://docs.vrchat.com/docs/vrchat-202134.md): Release - 15 September 2021 - Build 1132
+- [VRChat 2021.3.3p2](https://docs.vrchat.com/docs/vrchat-202133p2.md): Release - 8 September 2021 - Build 1130
+- [VRChat 2021.3.3p1](https://docs.vrchat.com/docs/vrchat-202133p1.md): Release - 20 August 2021 - Build 1129
+- [VRChat 2021.3.3](https://docs.vrchat.com/docs/vrchat-202133.md): Release - 18 August 2021 - Build 1128
+- [VRChat 2021.3.2p1](https://docs.vrchat.com/docs/vrchat-202132p1.md): Release - 12 August 2021 - Build 1123
+- [VRChat 2021.3.2](https://docs.vrchat.com/docs/vrchat-202132.md): Release - 4 August 2021 - Build 1121
+- [VRChat 2021.3.1p1](https://docs.vrchat.com/docs/vrchat-202131p1.md): Release - 13 July 2021 - Build 1114
+- [VRChat 2021.3.1](https://docs.vrchat.com/docs/vrchat-202131.md): Release - 8 July 2021 - Build 1113
+- [VRChat 2021.2.4p3](https://docs.vrchat.com/docs/vrchat-202124p3.md): Release - 24 June 2021 - Build 1110
+- [VRChat 2021.2.4p2](https://docs.vrchat.com/docs/vrchat-202124p2.md): Release - 17 June 2021 - Build 1108
+- [VRChat 2021.2.4p1](https://docs.vrchat.com/docs/vrchat-202124p1.md): Release - 17 June 2021 - Build 1106
+- [VRChat 2021.2.4](https://docs.vrchat.com/docs/vrchat-202124.md): Release - 16 June 2021 - Build 1106
+- [VRChat 2021.2.3p1](https://docs.vrchat.com/docs/vrchat-202123p1.md): Release - 4 June 2021 - Build 1102
+- [VRChat 2021.2.3](https://docs.vrchat.com/docs/vrchat-202123.md): Release - 3 June 2021 - Build 1101
+- [VRChat 2021.2.2](https://docs.vrchat.com/docs/vrchat-202122.md): Release - 17 May 2021 - Build 1095
+- [VRChat 2021.2.2p1](https://docs.vrchat.com/docs/vrchat-202122p1.md): Release - 21 May 2021 - Build 1097
+- [VRChat 2021.2.1](https://docs.vrchat.com/docs/vrchat-202121.md): Release - 3 May 2021 - Build 1088
+- [VRChat 2021.1.5p2](https://docs.vrchat.com/docs/vrchat-202115p2.md): Release - 1 April 2021 - Build 1069
+- [VRChat 2021.1.5p1](https://docs.vrchat.com/docs/vrchat-202115p1.md): Release - 31 March 2021 - Build 1068
+- [VRChat 2021.1.5](https://docs.vrchat.com/docs/vrchat-202115.md): Release - 23 March 2021 - Build 1067
+- [VRChat 2021.1.4p1](https://docs.vrchat.com/docs/vrchat-202114p1.md): Release - 12 March 2021 - Build 1062
+- [VRChat 2021.1.4](https://docs.vrchat.com/docs/vrchat-202114.md): Release - 10 March 2021 - Build 1061
+- [VRChat 2021.1.3p2](https://docs.vrchat.com/docs/vrchat-202113p2.md): Release - 4 March 2021 - Build 1058
+- [VRChat 2021.1.3p1](https://docs.vrchat.com/docs/vrchat-202113p1.md): Release - 1 March 2021 - Build 1056
+- [VRChat 2021.1.3](https://docs.vrchat.com/docs/vrchat-202113.md): Release - 23 Feb 2021 - Build 1054
+- [VRChat 2021.1.2p1](https://docs.vrchat.com/docs/vrchat-202112p1.md): Release - 5 Feb 2021 - Build 1048
+- [VRChat 2021.1.2](https://docs.vrchat.com/docs/vrchat-202112.md): Release - 2 Feb 2021 - Build 1046
+- [VRChat 2021.1.1p1](https://docs.vrchat.com/docs/vrchat-202111p1.md): Release - 20 Jan 2021 - Build 1040
+- [VRChat 2021.1.1](https://docs.vrchat.com/docs/vrchat-202111.md): Release - 19 Jan 2021 - Build 1039
+- [Patch Notes - 2020](https://docs.vrchat.com/docs/patch-notes-2020.md)
+- [Patch Notes - 2019](https://docs.vrchat.com/docs/patch-notes-2019.md)
+- [Patch Notes - 2018](https://docs.vrchat.com/docs/patch-notes-2018.md)
+- [Patch Notes - Pre-2018](https://docs.vrchat.com/docs/patch-notes-pre-2018.md)

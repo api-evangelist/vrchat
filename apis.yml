@@ -1,23 +1,172 @@
 aid: vrchat
 name: VRChat
-description: 'VRChat is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'VRChat is a social virtual-reality platform where users create avatars
+  and worlds in Unity with the first-party VRChat SDK (Worlds, Avatars, Udon and UdonSharp),
+  publish them through the VRChat Package Manager, and meet inside a persistent multi-user
+  universe playable on PC VR, standalone headsets and desktop. VRChat operates a live
+  web API at api.vrchat.cloud that powers its own client and website, but it explicitly
+  does not document, version, or support that API for public use: its Creator Guidelines
+  state endpoints may be added, removed, or changed with no warning. The machine-readable
+  surface VRChat does publish is the creator toolchain — the VPM package listings at
+  packages.vrchat.com, the vpm CLI on NuGet, the OSC and OSCQuery interfaces for external
+  avatar and input control, an llms.txt documentation index, and a public Statuspage.'
+image: https://static1.squarespace.com/static/5f0770791aaf57311515b23d/t/6508c787b8ced41ca3404f36/1718212268632/VRC_Logo.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/vrchat/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
-apis: []
+- Virtual Reality
+- Social Networks
+- Gaming
+- Metaverse
+- Avatars
+- Unity
+- Creator Economy
+- User Generated Content
+- OSC
+apis:
+- aid: vrchat:vrchat-web-api
+  name: VRChat Web API
+  description: 'The HTTP API at api.vrchat.cloud/api/1 that backs the VRChat client
+    and the vrchat.com website — authentication, users, friends, worlds, avatars, instances,
+    groups, files and notifications. VRChat operates this API publicly but explicitly
+    does not document it, publish a machine-readable specification for it, or support
+    third-party use of it. The only first-party guidance is the API section of the
+    Creator Guidelines, which sets User-Agent, rate-limit and credential-handling rules
+    for anyone who calls it anyway. The unauthenticated /api/1/config endpoint returns
+    200 with JSON and is the surface probed for this profile.'
+  humanURL: https://hello.vrchat.com/creator-guidelines
+  baseURL: https://api.vrchat.cloud/api/1
+  tags:
+  - Virtual Reality
+  - Social Networks
+  - Gaming
+  x-support: undocumented-unsupported
+  x-evidence:
+    fetched: '2026-08-05'
+    url: https://api.vrchat.cloud/api/1/config
+    http_status: 200
+    content_type: application/json
+    note: Live anonymous endpoint. No OpenAPI/Swagger published — /openapi.json, /openapi.yaml,
+      /swagger.json, /api-docs, /docs and /redoc all return 404 on api.vrchat.cloud.
+  properties:
+  - type: Conventions
+    url: conventions/vrchat-conventions.yml
+  - type: RateLimits
+    url: conventions/vrchat-conventions.yml
+- aid: vrchat:vrchat-vpm
+  name: VRChat Package Manager (VPM) Listing API
+  description: 'The VRChat Package Manager repository API — machine-readable VPM listing
+    documents served over HTTP that enumerate every first-party VRChat SDK package
+    (Base, Worlds, Avatars, Package Resolver) and the curated community listing, with
+    every published version, its display name, description, Unity requirements and
+    dependency graph. This is the registry the VRChat Creator Companion and the vpm
+    CLI read, and it is the one fully documented, fully machine-readable public API
+    surface VRChat ships.'
+  humanURL: https://vcc.docs.vrchat.com/vpm/
+  baseURL: https://packages.vrchat.com
+  tags:
+  - Package Management
+  - Unity
+  - Software Development
+  x-evidence:
+    fetched: '2026-08-05'
+    url: https://packages.vrchat.com/official?download
+    http_status: 200
+    content_type: application/json
+  properties:
+  - type: Documentation
+    url: https://vcc.docs.vrchat.com/vpm/
+  - type: Packages
+    url: packages/vrchat-packages.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vrchat-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/vrchat-stock
+  url: https://hello.vrchat.com/
+- type: Application
+  url: https://vrchat.com/home
+- type: DeveloperPortal
+  url: https://creators.vrchat.com/
+- type: Documentation
+  url: https://docs.vrchat.com/
+- type: GettingStarted
+  url: https://creators.vrchat.com/sdk/
+- type: Blog
+  url: https://hello.vrchat.com/blog
+- type: Support
+  url: https://ask.vrchat.com/
+- type: GitHubOrganization
+  url: https://github.com/vrchat-community
+- type: SignUp
+  url: https://vrchat.com/home/register
+- type: Login
+  url: https://vrchat.com/home/login
+- type: TermsOfService
+  url: https://hello.vrchat.com/legal
+- type: PrivacyPolicy
+  url: https://hello.vrchat.com/privacy
+- type: CreatorGuidelines
+  url: https://hello.vrchat.com/creator-guidelines
+- type: CommunityGuidelines
+  url: https://hello.vrchat.com/community-guidelines
+- type: FeatureRequests
+  url: https://feedback.vrchat.com/
+- type: StatusPage
+  url: https://status.vrchat.com
+- type: ChangeLog
+  url: https://docs.vrchat.com/docs/recent-releases
+- type: LLMsTxt
+  url: llms/vrchat-llms.txt
+- type: Packages
+  url: packages/vrchat-packages.yml
+- type: SDKs
+  url: packages/vrchat-packages.yml
+- type: CLI
+  url: cli/vrchat-cli.yml
+- type: Sandbox
+  url: sandbox/vrchat-sandbox.yml
+- type: Conventions
+  url: conventions/vrchat-conventions.yml
+- type: Lifecycle
+  url: lifecycle/vrchat-lifecycle.yml
+- type: Conformance
+  url: conformance/vrchat-conformance.yml
+- type: ChangeLog
+  url: changelog/vrchat-changelog.yml
+x-enrichment:
+  date: '2026-08-05'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1
+x-coverage:
+  state: covered
+  reason: no-machine-readable-spec
+  detail: 'VRChat operates a live public web API at api.vrchat.cloud (the anonymous
+    /api/1/config endpoint returns 200 JSON) but states in its own Creator Guidelines
+    that it does not document that API for public usage and that endpoints may be
+    added, removed, or relocated with no warning — so no OpenAPI, no auth reference,
+    and no error catalog exist to harvest, and the widely circulated vrchatapi/* specs
+    are community reverse-engineering that this profile deliberately does not attribute
+    to VRChat.'
+  evidence:
+  - url: https://api.vrchat.cloud/api/1/config
+    status: 200
+  - url: https://api.vrchat.cloud/openapi.json
+    status: 404
+  - url: https://hello.vrchat.com/creator-guidelines
+    status: 200
+  - url: https://docs.vrchat.com/llms.txt
+    status: 200
+  - url: https://packages.vrchat.com/official?download
+    status: 200
+  checked: '2026-08-05'

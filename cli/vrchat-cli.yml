@@ -1,0 +1,106 @@
+generated: '2026-08-05'
+method: searched
+source: https://vcc.docs.vrchat.com/vpm/cli/
+name: vpm
+display_name: VRChat Package Manager CLI
+description: 'First-party cross-platform command line interface for the VRChat Creator
+  Companion. It creates and migrates VRChat Unity projects from official templates,
+  resolves and installs VPM packages, manages package repositories, and installs the
+  Unity Hub and the exact Unity Editor version VRChat requires. It is the headless
+  equivalent of the Creator Companion GUI and the tool used for CI builds of VRChat
+  worlds and avatars.'
+docs: https://vcc.docs.vrchat.com/vpm/cli/
+source_repo: https://github.com/vrchat-community/creator-companion
+requirements:
+- .NET 8 SDK
+install:
+- method: dotnet-tool
+  command: dotnet tool install --global vrchat.vpm.cli
+- method: dotnet-tool-update
+  command: dotnet tool update --global vrchat.vpm.cli
+package: nuget:vrchat.vpm.cli
+command_groups:
+- group: projects
+  commands:
+  - command: vpm new
+    purpose: Create a new VRChat project from an official template
+  - command: vpm add project
+    purpose: Add an existing project to the Creator Companion project list
+  - command: vpm remove project
+    purpose: Remove a project from the Creator Companion list
+  - command: vpm list projects
+    purpose: Display all tracked projects and their Unity versions
+  - command: vpm check project
+    purpose: Verify a project is compatible with VRChat
+  - command: vpm resolve project
+    purpose: Restore VPM packages declared in the project manifest
+  - command: vpm migrate legacy
+    purpose: Convert a legacy .unitypackage SDK project to VPM
+  - command: vpm migrate 2022
+    purpose: Upgrade a Unity 2019 project to Unity 2022
+- group: packages
+  commands:
+  - command: vpm check package
+    purpose: Display package information or validation status
+  - command: vpm add package
+    purpose: Install a VPM package into a project
+  - command: vpm remove package
+    purpose: Uninstall a package from a project
+- group: templates
+  commands:
+  - command: vpm install templates
+    purpose: Download the latest official VRChat project templates
+  - command: vpm list templates
+    purpose: Show available official and user templates
+  - command: vpm check template
+    purpose: Verify template validity and version
+- group: repos
+  commands:
+  - command: vpm list repos
+    purpose: Display all available package sources
+  - command: vpm add repo
+    purpose: Register a local or remote package repository
+  - command: vpm new repo
+    purpose: Create a new package listing file
+  - command: vpm remove repo
+    purpose: Remove a repository from settings
+- group: requirements
+  commands:
+  - command: vpm check hub
+    purpose: Verify Unity Hub installation
+  - command: vpm install hub
+    purpose: Install Unity Hub 3.0 (Windows)
+  - command: vpm check unity
+    purpose: Verify a compatible Unity Editor installation
+  - command: vpm install unity
+    purpose: Install the VRChat-supported Unity Editor with Android support
+  - command: vpm list unity
+    purpose: Show detected Unity Editor installations
+- group: folders
+  commands:
+  - command: vpm open settingsFolder
+    purpose: Open the settings file location
+  - command: vpm open projectsFolder
+    purpose: Open the default project directory
+  - command: vpm open backupsFolder
+    purpose: Open the backup storage folder
+key_flows:
+- name: bootstrap a world project
+  steps:
+  - vpm install templates
+  - vpm new MyWorld World
+  - vpm resolve project ./MyWorld
+- name: add the Avatars SDK to an existing project
+  steps:
+  - vpm add package com.vrchat.avatars
+- name: register a third-party VPM listing
+  steps:
+  - vpm add repo <listing-url>
+  - vpm list repos
+notes: 'This CLI targets the Unity creator toolchain only. There is no first-party
+  CLI for the VRChat web API at api.vrchat.cloud — VRChat publishes no such tool and
+  does not support third-party clients for that API.'
+x-evidence:
+  fetched: '2026-08-05'
+  url: https://vcc.docs.vrchat.com/vpm/cli/
+  http_status: 200

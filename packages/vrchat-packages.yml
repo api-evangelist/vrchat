@@ -1,0 +1,104 @@
+generated: '2026-08-05'
+method: searched
+source: https://packages.vrchat.com/official?download
+notes: 'VRChat ships no client SDK for its web API — it publishes no REST specification
+  and states in its Creator Guidelines that it does not support third-party API applications.
+  The first-party package surface is the Unity creator toolchain, distributed as VPM
+  (VRChat Package Manager) packages from VRChat''s own listing host, plus two .NET
+  tools on NuGet. The widely used npm package "vrchat" and the vrchatapi/* client
+  libraries are COMMUNITY projects, not VRChat releases, and are recorded under
+  third_party below rather than as official packages.'
+registries:
+- name: VPM (VRChat Package Manager)
+  kind: first-party listing
+  official_listing: https://packages.vrchat.com/official?download
+  curated_listing: https://packages.vrchat.com/curated?download
+  canonical_index: https://vrchat.github.io/packages/index.json
+  listing_id: com.vrchat.repos.official
+  docs: https://vcc.docs.vrchat.com/vpm/
+  x-evidence:
+    fetched: '2026-08-05'
+    url: https://packages.vrchat.com/official?download
+    http_status: 200
+packages:
+- language: csharp
+  registry: vpm
+  name: com.vrchat.base
+  display_name: VRChat SDK - Base
+  description: Base for VRChat SDK
+  latest_version: 3.10.4
+  url: https://packages.vrchat.com/official?download
+  install: vpm add package com.vrchat.base
+  official: true
+- language: csharp
+  registry: vpm
+  name: com.vrchat.worlds
+  display_name: VRChat SDK - Worlds
+  description: Tools for creating interactive VRChat worlds using Udon
+  latest_version: 3.10.4
+  url: https://packages.vrchat.com/official?download
+  install: vpm add package com.vrchat.worlds
+  official: true
+- language: csharp
+  registry: vpm
+  name: com.vrchat.avatars
+  display_name: VRChat SDK - Avatars
+  description: Our powerful Avatars 3.0 System
+  latest_version: 3.10.4
+  url: https://packages.vrchat.com/official?download
+  install: vpm add package com.vrchat.avatars
+  official: true
+- language: csharp
+  registry: vpm
+  name: com.vrchat.core.vpm-resolver
+  display_name: VRChat Package Resolver Tool
+  description: Tool to Download VPM Packages
+  latest_version: 0.1.10
+  url: https://packages.vrchat.com/official?download
+  install: vpm add package com.vrchat.core.vpm-resolver
+  official: true
+- language: csharp
+  registry: nuget
+  name: vrchat.vpm.cli
+  display_name: VRChat VPM CLI
+  description: Command-line interface for the VRChat Package Manager and Creator Companion
+  latest_version: 0.1.29-beta.1
+  url: https://www.nuget.org/packages/vrchat.vpm.cli
+  install: dotnet tool install --global vrchat.vpm.cli
+  docs: https://vcc.docs.vrchat.com/vpm/cli/
+  official: true
+- language: csharp
+  registry: nuget
+  name: VRChat.OSCQuery
+  display_name: VRChat OSCQuery Library
+  description: OSCQuery library in .NET, used to advertise and discover OSC services
+    for VRChat
+  latest_version: 0.0.7
+  url: https://www.nuget.org/packages/VRChat.OSCQuery
+  install: dotnet add package VRChat.OSCQuery
+  source: https://github.com/vrchat-community/vrc-oscquery-lib
+  official: true
+third_party:
+- language: javascript
+  registry: npm
+  name: vrchat
+  description: VRChat.js — community JavaScript SDK for the undocumented VRChat web
+    API
+  url: https://www.npmjs.com/package/vrchat
+  official: false
+  note: Maintained by community members (vrchatapi / VRChat.community), not by VRChat
+    Inc. VRChat's Creator Guidelines state it does not support third-party API applications.
+- language: multiple
+  registry: github
+  name: vrchatapi/*
+  description: Community-driven VRChat API documentation and generated client libraries
+    (C#, Kotlin, Python, Rust, JS, Dart, PHP)
+  url: https://github.com/vrchatapi
+  official: false
+  note: Reverse-engineered. Not published, endorsed, or supported by VRChat Inc.; recorded
+    here for provenance only and deliberately NOT harvested into openapi/.
+coverage:
+  official_packages: 6
+  registries: [vpm, nuget]
+  languages: [csharp]
+  web_api_sdk: false

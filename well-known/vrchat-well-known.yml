@@ -1,0 +1,49 @@
+generated: '2026-08-05'
+method: probed
+source: live GET probes of every VRChat host in apis.yml
+result: none
+summary: 'No /.well-known/ discovery document was found on any VRChat host. Every path
+  probed returned 404. api.vrchat.cloud answers with its JSON not-implemented envelope,
+  vrchat.com proxies the same envelope, creators.vrchat.com and docs.vrchat.com return
+  their Docusaurus / ReadMe 404 HTML shells, and hello.vrchat.com returns a Squarespace
+  404 (with an explicit {"message":"security.txt not found"} for the security.txt path).
+  No WellKnown or SecurityTxt pointer is wired in apis.yml — there is nothing to point
+  at, and a 404 is not evidence of a catalog.'
+hosts:
+- host: https://api.vrchat.cloud
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://vrchat.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://creators.vrchat.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://docs.vrchat.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://hello.vrchat.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404, body: '{"message":"security.txt not found"}'}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+checked: '2026-08-05'

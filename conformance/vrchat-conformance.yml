@@ -1,0 +1,121 @@
+generated: '2026-08-05'
+method: searched
+source: https://docs.vrchat.com/llms.txt
+note: 'Asserted from what VRChat publishes and from live probes of api.vrchat.cloud,
+  packages.vrchat.com and status.vrchat.com on 2026-08-05. VRChat publishes no OpenAPI,
+  so nothing here is derived from a specification.'
+standards:
+- id: osc-1.0
+  name: Open Sound Control 1.0
+  conforms: true
+  evidence: 'VRChat implements OSC as a first-party integration surface — inbound UDP
+    port 9000, outbound UDP port 9001, configurable with --osc=inPort:senderIP:outPort.
+    Documented address spaces for avatar parameters, input control, trackers, eye
+    tracking and avatar scaling.'
+  docs: https://docs.vrchat.com/docs/osc-overview
+- id: oscquery
+  name: OSCQuery
+  conforms: true
+  evidence: VRChat ships a first-party OSCQuery implementation and publishes the
+    VRChat.OSCQuery .NET library from its own GitHub organization; OSCQuery is used
+    to advertise and discover OSC service endpoints and parameter trees over HTTP+JSON.
+  docs: https://docs.vrchat.com/docs/oscquery
+  library: https://github.com/vrchat-community/vrc-oscquery-lib
+- id: vpm
+  name: VRChat Package Manager listing format
+  conforms: true
+  evidence: packages.vrchat.com serves machine-readable VPM listing documents (id
+    com.vrchat.repos.official) enumerating packages, versions and dependencies; the
+    format is a VRChat-defined superset of the Unity UPM package manifest.
+  docs: https://vcc.docs.vrchat.com/vpm/
+- id: upm
+  name: Unity Package Manager manifest
+  conforms: true
+  evidence: VPM packages carry Unity UPM package.json fields (name, version, displayName,
+    unity, dependencies) as observed in the official listing document.
+- id: llms-txt
+  name: llms.txt
+  conforms: true
+  evidence: https://docs.vrchat.com/llms.txt returns 200 with a conformant llms.txt
+    document — H1 title, blockquote summary, and sectioned markdown link lists with
+    .md source URLs.
+- id: statuspage-api
+  name: Atlassian Statuspage public status API
+  conforms: true
+  evidence: status.vrchat.com/api/v2/status.json and /api/v2/summary.json return 200
+    with the standard Statuspage schema (page, status, components).
+- id: openapi
+  name: OpenAPI
+  conforms: false
+  evidence: No OpenAPI or Swagger document is published. /openapi.json, /openapi.yaml,
+    /swagger.json, /api-docs, /docs and /redoc all return 404 on api.vrchat.cloud;
+    the docs, portal and marketing hosts return 404 or an HTML shell.
+- id: asyncapi
+  name: AsyncAPI
+  conforms: false
+  evidence: No AsyncAPI document and no documented public webhook or event catalog.
+    A realtime event stream exists behind the client (referenced as disableEventStream
+    in /api/1/config) but is undocumented.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: false
+  evidence: No oauth2 authorization or token endpoints are documented; /.well-known/oauth-authorization-server
+    returns 404 on every VRChat host probed.
+- id: oidc
+  name: OpenID Connect
+  conforms: false
+  evidence: /.well-known/openid-configuration returns 404 on api.vrchat.cloud,
+    vrchat.com, creators.vrchat.com and hello.vrchat.com.
+- id: rfc9457-problem-details
+  name: RFC 9457 Problem Details for HTTP APIs
+  conforms: false
+  evidence: Error responses are application/json with an ad-hoc envelope, not
+    application/problem+json. See conventions/vrchat-conventions.yml.
+- id: rfc9116-security-txt
+  name: RFC 9116 security.txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404 on api.vrchat.cloud, vrchat.com,
+    creators.vrchat.com and docs.vrchat.com; hello.vrchat.com returns 404 with
+    {"message":"security.txt not found"}.
+- id: rfc8594-sunset
+  name: RFC 8594 Sunset header
+  conforms: false
+  evidence: No Sunset or Deprecation header support is documented or observed;
+    VRChat explicitly states endpoints may change or be removed with no notice.
+- id: rfc8615-well-known
+  name: RFC 8615 well-known URIs
+  conforms: false
+  evidence: Every /.well-known/ path probed returns 404. See well-known/vrchat-well-known.yml.
+- id: a2a
+  name: A2A Agent Card
+  conforms: false
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json return 404 on
+    every VRChat host probed.
+- id: mcp
+  name: Model Context Protocol
+  conforms: false
+  evidence: No first-party MCP server is published. The VRChat MCP servers in the
+    public registries are community projects built on the undocumented web API.
+compliance_program:
+  published: false
+  certifications: []
+  trust_center: null
+  note: No trust centre, no named certifications (SOC 2 / ISO 27001 / PCI DSS / HIPAA
+    / FedRAMP) and no compliance page were found. Payments in the Creator Economy are
+    processed by Tilia, whose own legal terms are linked from VRChat's Terms of Service.
+    No type Compliance pointer is wired.
+x-evidence:
+- url: https://docs.vrchat.com/llms.txt
+  http_status: 200
+- url: https://docs.vrchat.com/docs/osc-overview
+  http_status: 200
+- url: https://docs.vrchat.com/docs/oscquery
+  http_status: 200
+- url: https://packages.vrchat.com/official?download
+  http_status: 200
+- url: https://status.vrchat.com/api/v2/summary.json
+  http_status: 200
+- url: https://api.vrchat.cloud/openapi.json
+  http_status: 404
+- url: https://api.vrchat.cloud/.well-known/openid-configuration
+  http_status: 404

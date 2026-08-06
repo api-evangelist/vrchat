@@ -1,0 +1,100 @@
+generated: '2026-08-05'
+method: searched
+source: https://docs.vrchat.com/docs/recent-releases
+index_source: https://docs.vrchat.com/llms.txt
+scheme: calendar
+scheme_detail: 'VRChat client releases are numbered YYYY.<release>.<minor>, with lettered
+  patch builds appended as p1, p2, p3. Every release also carries a monotonic build
+  number. Each release ships first to an OPEN BETA channel and then to Live. Release
+  notes are published as individual dated documentation pages on docs.vrchat.com and
+  indexed in the site llms.txt.'
+current:
+  version: 2026.2.3p3
+  build: '1867'
+  channel: Live
+  date: '2026-07-14'
+open_beta:
+  version: 2026.3.1
+  build: '1878'
+  channel: Open Beta
+  date: '2026-07-22'
+covers: client releases; VRChat publishes no changelog for the web API at api.vrchat.cloud
+sdk_versions:
+  current: 3.10.4
+  packages: [com.vrchat.base, com.vrchat.worlds, com.vrchat.avatars]
+  source: https://packages.vrchat.com/official?download
+entries:
+- version: 2026.3.1
+  build: '1878'
+  date: '2026-07-22'
+  channel: Open Beta
+  url: https://docs.vrchat.com/docs/vrchat-202623-openbeta
+- version: 2026.2.3p3
+  build: '1867'
+  date: '2026-07-14'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202623p3
+- version: 2026.2.3p2
+  build: '1866'
+  date: '2026-07-08'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202623p2
+- version: 2026.2.3p1
+  build: '1865'
+  date: '2026-06-25'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202623p1
+- version: 2026.2.3
+  build: '1864'
+  date: '2026-06-22'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202623
+- version: 2026.2.3
+  build: '1860'
+  date: '2026-06-08'
+  channel: Open Beta
+  url: https://docs.vrchat.com/docs/vrchat-202623-open-beta
+- version: 2026.2.2p2
+  build: '1855'
+  date: '2026-06-05'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202622p2
+- version: 2026.2.2p1
+  build: '1854'
+  date: '2026-06-04'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202622p1
+- version: 2026.2.2
+  build: '1853'
+  date: '2026-05-28'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202622
+- version: 2026.2.2
+  build: '1849'
+  date: '2026-05-13'
+  channel: Open Beta
+  url: https://docs.vrchat.com/docs/vrchat-202622-open-beta
+- version: 2026.2.1p2
+  build: '1837'
+  date: '2026-05-01'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202621p2
+- version: 2026.2.1p1
+  build: '1836'
+  date: '2026-04-30'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202621p1
+- version: 2026.2.1
+  build: '1835'
+  date: '2026-04-28'
+  channel: Live
+  url: https://docs.vrchat.com/docs/vrchat-202621
+window: recent releases only — the full dated history back to 2022 is enumerated in
+  llms/vrchat-llms.txt and on docs.vrchat.com
+x-evidence:
+- url: https://docs.vrchat.com/llms.txt
+  http_status: 200
+  fetched: '2026-08-05'
+- url: https://docs.vrchat.com/docs/recent-releases
+  http_status: 200
+  fetched: '2026-08-05'

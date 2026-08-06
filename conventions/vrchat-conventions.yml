@@ -1,0 +1,111 @@
+generated: '2026-08-05'
+method: searched
+source: https://hello.vrchat.com/creator-guidelines
+source_updated: '2025-04-15'
+summary: 'VRChat publishes no API reference, no OpenAPI, and no request/response contract
+  for api.vrchat.cloud. What it does publish — in the API section of its Creator Guidelines
+  — is a set of BEHAVIOURAL rules that any client of that API must follow: identify
+  yourself with a structured User-Agent, respect HTTP error semantics and 429, back
+  off and cache, never poll on fixed clock intervals, never handle another user''s
+  credentials, and never act on another user''s behalf. Those rules are the closest
+  thing VRChat has to an API convention document, and they are captured here verbatim
+  in substance. Idempotency, pagination, versioning, request tracing and the error
+  envelope are NOT documented by VRChat.'
+authentication:
+  documented: false
+  note: VRChat does not document how to authenticate against api.vrchat.cloud. Account
+    authentication for the client and website is username/password plus optional two-factor
+    (docs.vrchat.com/docs/setup-2fa). No OAuth, no OIDC, no published API keys or scopes.
+  account_2fa_docs: https://docs.vrchat.com/docs/setup-2fa
+  rules:
+  - Do not request log-in information from users in any situation — never ask for usernames,
+    passwords, tokens, or session data.
+  - Assume every API interaction originates from that user's own device; do not act
+    on behalf of another user.
+identification:
+  required: true
+  header: User-Agent
+  format: applicationName/Version contactInfo
+  note: 'Applications must identify themselves properly using the User-Agent request
+    header. This is the single hard client requirement VRChat publishes.'
+rate_limiting:
+  documented: true
+  numeric_limits_published: false
+  signalling: standard HTTP status codes; 429 Too Many Requests
+  response_headers_observed: none — no X-RateLimit-* or Retry-After headers were present
+    on GET /api/1/config (probed 2026-08-05)
+  rules:
+  - Do not submit repeated, unmetered requests.
+  - Handle standard HTTP error codes appropriately. If you get a 429, do not keep knocking.
+  - Implement caching and a back-off strategy on errors.
+  - Do not schedule regular API calls (polling, etc.) based on fixed clock intervals
+    — that creates synchronized spikes of traffic.
+  note: VRChat publishes no numeric request quota, no rate-limit response headers,
+    and no documented retry-after contract. The obligation is placed on the client.
+idempotency:
+  supported: unknown
+  documented: false
+  note: No idempotency key, no retry-safety contract, and no write-deduplication guidance
+    is published. Deliberately NOT wired as a type Idempotency pointer in apis.yml —
+    there is no idempotency contract to point at.
+pagination:
+  documented: false
+versioning:
+  documented: false
+  scheme: uri-path
+  observed: /api/1/ path prefix on api.vrchat.cloud
+  policy: 'VRChat does not document its API for public usage. Endpoints may be added
+    or removed, change format, or change locations with no warning or notification.'
+  note: See lifecycle/vrchat-lifecycle.yml — this is an explicit no-stability-guarantee
+    statement, not a deprecation policy.
+error_envelope:
+  documented: false
+  rfc9457: false
+  observed:
+  - status: 401
+    body: '{"error":{"message":"\"Missing Credentials\"","status_code":401}}'
+    url: https://api.vrchat.cloud/api/1/auth/user
+    fetched: '2026-08-05'
+  - status: 404
+    body: '{"error":"The endpoint you''re looking for is not implemented by our system.","status_code":404}'
+    url: https://api.vrchat.cloud/api/1/nonexistent-ae-probe
+    fetched: '2026-08-05'
+  note: The envelope is not consistent — the 401 nests error as an object with message
+    and status_code, the 404 returns error as a plain string alongside a sibling
+    status_code. Content type is application/json, not application/problem+json.
+    Recorded from live probes; VRChat publishes no error reference, so no
+    type ErrorCatalog pointer is wired.
+request_tracing:
+  documented: false
+  observed_headers:
+  - header: x-vrc-request-id
+    example: msgp5xvt8naitrzu
+  - header: x-vrc-api-version
+    example: master-build-2026-08-05-dorothy-shaftgood
+  - header: x-vrc-api-server
+    example: prod-api-green-lies-j1m
+  - header: x-vrc-api-group
+    example: green
+  note: Response headers observed on GET /api/1/config on 2026-08-05. A per-request
+    correlation id and a build-stamped API version are emitted but are not documented
+    anywhere by VRChat.
+content_restrictions:
+- Do not create or use software, scripts, or applications that upload content such
+  as worlds, avatars, or other similar asset types on a user's behalf, whether server-hosted
+  or client-run.
+- Don't be malicious. If you're doing something disruptive, VRChat will moderate the
+  application and all users of it.
+support_posture:
+  third_party_api_apps_supported: false
+  statement: VRChat provides no support for third-party applications using the API.
+related:
+- lifecycle/vrchat-lifecycle.yml
+- conformance/vrchat-conformance.yml
+- packages/vrchat-packages.yml
+x-evidence:
+- url: https://hello.vrchat.com/creator-guidelines
+  http_status: 200
+  fetched: '2026-08-05'
+- url: https://api.vrchat.cloud/api/1/config
+  http_status: 200
+  fetched: '2026-08-05'
