@@ -10,6 +10,17 @@ description: 'VRChat is a social virtual-reality platform where users create ava
   surface VRChat does publish is the creator toolchain — the VPM package listings at
   packages.vrchat.com, the vpm CLI on NuGet, the OSC and OSCQuery interfaces for external
   avatar and input control, an llms.txt documentation index, and a public Statuspage.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://static1.squarespace.com/static/5f0770791aaf57311515b23d/t/6508c787b8ced41ca3404f36/1718212268632/VRC_Logo.png?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/vrchat/refs/heads/main/apis.yml
 x-type: company
