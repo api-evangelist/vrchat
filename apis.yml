@@ -44,6 +44,17 @@ modified: '2026-08-05'
 tags:
 - Company
 - Virtual Reality
+- Social Network
+- Gaming
+- Metaverse
+- Avatars
+- Unity
+- Creator Economy
+- User Generated Content
+- OSC
+tags_raw:
+- Company
+- Virtual Reality
 - Social Networks
 - Gaming
 - Metaverse
@@ -66,6 +77,10 @@ apis:
   humanURL: https://hello.vrchat.com/creator-guidelines
   baseURL: https://api.vrchat.cloud/api/1
   tags:
+  - Virtual Reality
+  - Social Network
+  - Gaming
+  tags_raw:
   - Virtual Reality
   - Social Networks
   - Gaming
